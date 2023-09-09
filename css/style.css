@@ -1,0 +1,87 @@
+Body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+    background: #000000;
+    width: auto;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  gap: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: relative;
+}
+.header {
+  padding: 32px 0;
+}
+.main {
+  display: flex;;
+  flex-direction: row;
+  gap: 20px;
+}
+.content {
+  width: auto;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:  #2F2F31;
+  padding: 8px 24px 8px 24px;
+  background: #1D1D1D;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.sidebar {
+  width: 30%;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: vertical;
+  margin: 20px 0;
+}
+.footer {
+  padding: 20px 0;
+  justify-content: absolute; 
+}
+H1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+H2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+P {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #999999;
+}
+
+link {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #999999;
+}
+
+.pill {
+  padding: 4px 8px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:  #f7f7f7;
+}
