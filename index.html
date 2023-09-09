@@ -13,63 +13,97 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>JacobOlenick</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <! -- Navbar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            <li><a>Item 3</a></li>
           </ul>
         </div>
-      </nav>
+        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li tabindex="0">
+            <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Button</a>
+      </div>
+    </div>
+
+    <! -- Hero -->
 
       <div class="hero min-h-screen bg-base-200">
         <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1>Senior UX Designer and Front-end Developer</h1>
-            <p> Currently at Cisco | Previously at Wells Fargo, Paramount+, and AXS.com</p>
-            <button class="button-hero">Get Started</button>
+          <div class="max-width">
+            <h1 class="text-5xl font-bold">UX Designer & Front-end Developer</h1>
+            <p class="py-6">A Senior UX designer at Cisco who's also a Front-end Dev by night.</p>
+            <button class="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
 
+      <! -- Carousel --> 
    
     <div class="container">
       <div class="header">
-            <h1>Fall 2023</h1> </div>
+            <h2>Recent Projects</h2> </div>
+
         <div class="main">
 
-          <div class="carousel-start">
-            <div class="carousel-item">
-              <img class="img" src="src/jacob1.jpg" alt="Jacob" />
-            </div> 
-            <div class="carousel-item">
-              <img class="img" src="src/mug1.jpg" alt="Mug" />
-            </div> 
-            <div class="carousel-item">
-              <img class="img" src="src/jacobcisco.jpg" alt="Jacob" />
-            </div> 
-            <div class="carousel-item">
-              <img class="img" src="src/desk1.jpg" alt="Desksetup" />
-            </div> 
-            <div class="carousel-item">
-              <img class="img" src="mig2" alt="Mug" />
-            </div> 
+          <! -- Cards -->
+          <div classname ="proejctcards">
+          <div class="card">
+            <figure><img class="projectimg" src="src/projectai.jpg" alt="Album"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">Project.ai</h2>
+              <p>Click the button to listen on Spotiwhy app.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">View on Dribbble</button>
+              </div>
+            </div>
           </div>
+
+          <div classname ="proejctcards">
+            <div class="card">
+              <figure><img class="projectimg" src="src/projectai.jpg" alt="Album"/></figure>
+              <div class="card-body">
+                <h3 class="card-title">Project.ai</h3>
+                <p>Click the button to listen on Spotiwhy app.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">View on Dribbble</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+          <! -- End Cards -->
+
+        
           
         </div>
 
