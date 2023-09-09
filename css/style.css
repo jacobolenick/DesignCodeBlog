@@ -2,8 +2,8 @@ Body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
-    background: #000000;
+  color: #000000;
+    background: #fafafa;
     width: auto;
     margin-left: 64px;
     margin-right: 64px;
@@ -27,15 +27,25 @@ Body {
   gap: 20px;
 }
 .content {
-  width: auto;
-  border-radius: 16px;
-  border-style: solid;
-  border-width: 1px;
-  border-color:  #2F2F31;
-  padding: 8px 24px 8px 24px;
-  background: #1D1D1D;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+  background-color: #1A1D23;
+  border-radius: 16PX;
+  border: 3px solid #787e8d;
+  width: 500px;
+  padding: 16px 32px 16px 32px;
+  display:flex;
+  flex-direction: column;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+}
+.content:hover {
+  background-color: #0b0d10;
+  border-radius: 16PX;
+  stroke: #252932;
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+      
+  
 }
 .sidebar {
   width: 30%;
@@ -52,12 +62,17 @@ Body {
 }
 H1 {
   font-size: 50px;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 900;
+  color: #000000;
 }
 H2 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #999999;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 900;
   color: #ffffff;
 }
 
@@ -73,15 +88,6 @@ link {
   color: #999999;
 }
 
-.pill {
-  padding: 4px 8px;
-  border-radius: 16px;
-  background: #ffffff;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0 4px;
-  border-style: solid;
-  border-width: 1px;
-  border-color:  #f7f7f7;
+.title {
+  margin-bottom: 8px;
 }
