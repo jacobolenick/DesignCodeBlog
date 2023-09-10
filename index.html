@@ -1,13 +1,14 @@
 <!Doctype   html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8">
     <title>DesignCodeBlog</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="font/Mona-Sans.woff2 ">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -37,16 +38,19 @@
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li><a>Info</a></li>
+          <li><a>Resources</a></li>
           <li tabindex="0">
             <details>
               <summary>Projects</summary>
               <ul class="p-2">
                 <li><a>Wells Fargo</a></li>
-                <li><a>ParamountP</a></li>
+                <li><a>ParamountPlus</a></li>
+                <li><a>AXS.com</a></li>
+                <li><a>Orgspace</a></li>
+                <li><a>Crtside</a></li>
               </ul>
             </details>
           </li>
-          <li><a>Resources</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -58,10 +62,9 @@
 
       <div class="hero min-h-screen bg-base-200">
         <div class="hero-content text-center">
-          <div class="max-width">
+          <div class="max-w-100%">
             <h1 class="text-5xl font-bold">UX Designer & Front-end Developer</h1>
             <p class="py-6">A Senior UX designer at Cisco who's also a Front-end Dev by night.</p>
-            <button class="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
@@ -75,33 +78,45 @@
         <div class="main">
 
           <! -- Cards -->
-          <div classname ="proejctcards">
+          
           <div class="card">
-            <figure><img class="projectimg" src="src/projectai.jpg" alt="Album"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">Project.ai</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">View on Dribbble</button>
-              </div>
+            <img src="src/this1.jpg" alt="Portfolio Item">
+            <div class="card-content">
+                <h2>Project Title</h2>
+                <p>Description of your project goes here. You can provide details about the technologies used, your role, and the project's impact.</p>
+                <a href="#" class="btn">View Project</a>
             </div>
-          </div>
-
-          <div classname ="proejctcards">
-            <div class="card">
-              <figure><img class="projectimg" src="src/projectai.jpg" alt="Album"/></figure>
-              <div class="card-body">
-                <h3 class="card-title">Project.ai</h3>
-                <p>Click the button to listen on Spotiwhy app.</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">View on Dribbble</button>
-                </div>
-              </div>
-            </div>
-
         </div>
 
+        <div class="card">
+          <img src="src/this2.jpg" alt="Portfolio Item">
+          <div class="card-content">
+              <h2>Project Title</h2>
+              <p>Description of your project goes here. You can provide details about the technologies used, your role, and the project's impact.</p>
+              <a href="#" class="btn">View Project</a>
+          </div>
+
+          
+      </div>
+
+
+        </div>
+        
+
           <! -- End Cards -->
+
+
+          <div class="slider-container">
+            <div class="slider">
+                <img src="src/projectai.jpg" alt="Image 1">
+                <img src="src/project3.jpg" alt="Image 2">
+                <!-- Add more images here -->
+            </div>
+            <button class="prev-slide">Previous</button>
+            <button class="next-slide">Next</button>
+        </div>
+
+        <script src="script.js"></script>
 
         
           
