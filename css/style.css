@@ -378,6 +378,7 @@ p {
   width: 100%;
   padding-top: 64px;
   padding-bottom: 64px;
+  margin-top: -700px;
 }
 
 .logosimg {
